@@ -443,6 +443,29 @@ a { color: inherit; }
 
 .event-photo-sub img { border-radius: 6px; }
 
+.scene-kitchen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 56px;
+}
+
+.scene-kitchen img {
+  width: 220px;
+  border-radius: 8px;
+}
+
+.scene-kitchen p {
+  font-size: 14px;
+  color: var(--color-text-sub);
+}
+
+@media (max-width: 760px) {
+  .scene-kitchen { flex-direction: column; text-align: center; }
+  .scene-kitchen img { width: 70%; max-width: 280px; }
+}
+
 .scene-more {
   text-align: center;
   margin-top: 40px;
@@ -483,6 +506,37 @@ a { color: inherit; }
 .pay-card h3 { font-size: 16px; margin-bottom: 8px; }
 
 .pay-card p { font-size: 13px; color: var(--color-text-sub); }
+
+.pay-card-link {
+  display: block;
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.pay-card-link:hover { border-color: var(--color-text); }
+
+.bank-box { max-width: 480px; margin: 0 auto; }
+
+.bank-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-bg);
+}
+
+.bank-table th,
+.bank-table td {
+  border: 1px solid var(--color-border);
+  padding: 12px 18px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.bank-table th {
+  background: #efefec;
+  width: 34%;
+  font-weight: 700;
+  white-space: nowrap;
+}
 
 .pay-links {
   display: grid;
