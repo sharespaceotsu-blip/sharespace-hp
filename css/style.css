@@ -391,6 +391,79 @@ a { color: inherit; }
 /* ---------- CTA ---------- */
 .cta { text-align: center; }
 
+/* ---------- イベント・講座ページ ---------- */
+.event-list {
+  display: grid;
+  gap: 32px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.event-card {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 28px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 28px;
+  align-items: start;
+}
+
+.event-card:not(:has(.event-photo)) { grid-template-columns: 1fr; }
+
+.event-photo img { border-radius: 6px; }
+
+.event-tag {
+  font-size: 12px;
+  color: var(--color-text-sub);
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.event-body h3 { font-size: 18px; margin-bottom: 10px; }
+
+.event-body p { font-size: 14px; color: var(--color-text-sub); }
+
+.event-note {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.event-photo-sub { max-width: 320px; margin-top: 14px; }
+
+.event-motto {
+  text-align: center;
+  margin-top: 48px;
+  font-size: 14px;
+  color: var(--color-text-sub);
+  letter-spacing: 0.08em;
+  line-height: 2.2;
+}
+
+.event-photo-sub img { border-radius: 6px; }
+
+.scene-more {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.scene-more a {
+  display: inline-block;
+  border: 1px solid var(--color-text);
+  border-radius: 6px;
+  padding: 12px 32px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.scene-more a:hover { background: var(--color-text); color: #fff; }
+
+@media (max-width: 760px) {
+  .event-card { grid-template-columns: 1fr; padding: 22px; }
+}
+
 /* ---------- お支払いページ ---------- */
 .pay-grid {
   display: grid;
