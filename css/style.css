@@ -318,6 +318,11 @@ a { color: inherit; }
   border-radius: 8px;
 }
 
+.calendar-cta {
+  text-align: center;
+  margin: -8px 0 44px;
+}
+
 /* ---------- アクセス ---------- */
 .access-grid {
   display: grid;
